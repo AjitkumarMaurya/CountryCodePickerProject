@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="in.ajit.countrycodepickerproject.HomeActivity">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#222124"
+        android:padding="28dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phone number"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <com.ajit.CountryCodePicker
+                    android:id="@+id/ccp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:ccpDialog_background="@drawable/gradient"
+                    app:ccpDialog_searchEditTextTint="@android:color/white"
+                    app:ccpDialog_showCloseIcon="true"
+                    app:ccpDialog_showFastScroller="false"
+                    app:ccpDialog_textColor="@android:color/white"
+                    app:ccp_contentColor="@android:color/white"
+                    app:ccp_countryPreference="pl"
+                    app:ccp_defaultLanguage="POLISH" />
+
+                <EditText
+                    android:id="@+id/editText_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@android:color/white"
+                    android:enabled="false"
+                    android:hint="phone"
+                    android:inputType="phone"
+                    android:singleLine="true"
+                    android:text="8866667722"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="#caffffff" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
