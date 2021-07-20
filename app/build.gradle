@@ -8,8 +8,8 @@ android {
         applicationId "in.ajit.countrycodepickerproject"
         minSdkVersion 14
         targetSdkVersion 30
-        versionCode 7
-        versionName "2.2.4"
+        versionCode 1
+        versionName "1.0"
     }
     buildTypes {
         release {
